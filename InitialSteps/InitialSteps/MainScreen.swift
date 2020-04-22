@@ -7,9 +7,21 @@
 //
 
 import UIKit
-import SnapKit
 
 final class MainScreen : UIView {
+    
+    lazy var label: UILabel = {
+        let label = UILabel(frame: .zero)
+        
+        label.textColor = .white
+        
+        label.text = "Hello! :)"
+        
+        // This property must be false whenever you add your own constraints, as coded below
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
     
     lazy var button: UIButton = {
         let button = UIButton(frame: .zero)
@@ -19,7 +31,7 @@ final class MainScreen : UIView {
         button.setTitle("Fetch", for: .normal)
         
         // This property must be false whenever you add your own constraints, as coded below
-        // button.translatesAutoresizingMaskIntoConstraints = false
+        button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
@@ -37,28 +49,29 @@ final class MainScreen : UIView {
 
 extension MainScreen: CustomView {
     func buildViewHierarchy() {
+        addSubview(label)
         addSubview(button)
     }
     
     func setupConstraints() {
+        
+        // Adding a center constraint for X axis
+        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        
+        // Adding a center constraint for Y axis
+        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
         // Adding a 16px margin to the left of the parent view
-        // button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).isActive = true
+         button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).isActive = true
         
         // Adding a -16px margin to the right of the parent view
-        // button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
+         button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
         
         // Adding a fixed height of 50px
-        // button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         // Adding a -16px margin to the bottom of the parent view
-        // button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16).isActive = true
-        
-        button.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().inset(16) //same as offset(-16)
-            make.height.equalTo(50)
-            make.bottom.equalToSuperview().inset(16) //same as offset(-16)
-        }
+         button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16).isActive = true
     }
     
     func setupAdditionalConfiguration() {

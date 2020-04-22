@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  InitialSteps
+//  UsingSnapKit
 //
-//  Created by Wellington Pereira on 21/04/20.
+//  Created by Wellington Pereira on 22/04/20.
 //  Copyright © 2020 Wellington Pereira. All rights reserved.
 //
 
@@ -17,4 +17,3 @@ class ViewController: UIViewController {
     }
 
 }
-
