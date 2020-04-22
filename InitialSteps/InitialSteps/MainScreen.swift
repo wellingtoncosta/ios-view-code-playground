@@ -7,21 +7,7 @@
 //
 
 import UIKit
-
-protocol CustomViewSteps {
-    func buildViewHierarchy()
-    func setupConstraints()
-    func setupAdditionalConfiguration()
-    func setupView()
-}
-
-extension CustomViewSteps {
-    func setupView() {
-        buildViewHierarchy()
-        setupConstraints()
-        setupAdditionalConfiguration()
-    }
-}
+import SnapKit
 
 final class MainScreen : UIView {
     
@@ -33,7 +19,7 @@ final class MainScreen : UIView {
         button.setTitle("Fetch", for: .normal)
         
         // This property must be false whenever you add your own constraints, as coded below
-        button.translatesAutoresizingMaskIntoConstraints = false
+        // button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
     }()
@@ -49,23 +35,30 @@ final class MainScreen : UIView {
     
 }
 
-extension MainScreen: CustomViewSteps {
+extension MainScreen: CodeView {
     func buildViewHierarchy() {
         addSubview(button)
     }
     
     func setupConstraints() {
         // Adding a 16px margin to the left of the parent view
-        button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).isActive = true
+        // button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).isActive = true
         
         // Adding a -16px margin to the right of the parent view
-        button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
+        // button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16).isActive = true
         
         // Adding a fixed height of 50px
-        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        // button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         // Adding a -16px margin to the bottom of the parent view
-        button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16).isActive = true
+        // button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16).isActive = true
+        
+        button.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().inset(16) //same as offset(-16)
+            make.height.equalTo(50)
+            make.bottom.equalToSuperview().inset(16) //same as offset(-16)
+        }
     }
     
     func setupAdditionalConfiguration() {

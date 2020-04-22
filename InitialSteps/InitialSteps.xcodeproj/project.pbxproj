@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		BE4E204B244FC05A00694577 /* InitialStepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E204A244FC05A00694577 /* InitialStepsTests.swift */; };
 		BE4E2056244FC05A00694577 /* InitialStepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E2055244FC05A00694577 /* InitialStepsUITests.swift */; };
 		BE4E2064244FC6F700694577 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E2063244FC6F700694577 /* MainScreen.swift */; };
+		BEF6AEFA244FD729007F3DED /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF6AEF9244FD729007F3DED /* CodeView.swift */; };
 		C78F833E636DE6C8902087DE /* Pods_InitialSteps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6904395E71AF02C6CBCACDAC /* Pods_InitialSteps.framework */; };
 		C9D9EA10EA75914539ED44D9 /* Pods_InitialStepsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE697B5EB8217FFE80EB7D4 /* Pods_InitialStepsTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		BE4E2055244FC05A00694577 /* InitialStepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialStepsUITests.swift; sourceTree = "<group>"; };
 		BE4E2057244FC05A00694577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4E2063244FC6F700694577 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		BEF6AEF9244FD729007F3DED /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		CFF726892570F4CA2B19F469 /* Pods-InitialSteps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InitialSteps.release.xcconfig"; path = "Target Support Files/Pods-InitialSteps/Pods-InitialSteps.release.xcconfig"; sourceTree = "<group>"; };
 		FFE697B5EB8217FFE80EB7D4 /* Pods_InitialStepsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InitialStepsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +113,6 @@
 				887D3CAB574D6FD7733109D4 /* Pods-InitialStepsTests.debug.xcconfig */,
 				6AEAD5287B27F9AF64EABAA8 /* Pods-InitialStepsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +148,7 @@
 				BE4E203E244FC05A00694577 /* LaunchScreen.storyboard */,
 				BE4E2041244FC05A00694577 /* Info.plist */,
 				BE4E2063244FC6F700694577 /* MainScreen.swift */,
+				BEF6AEF9244FD729007F3DED /* CodeView.swift */,
 			);
 			path = InitialSteps;
 			sourceTree = "<group>";
@@ -410,6 +412,7 @@
 				BE4E2064244FC6F700694577 /* MainScreen.swift in Sources */,
 				BE4E2038244FC05700694577 /* ViewController.swift in Sources */,
 				BE4E2034244FC05700694577 /* AppDelegate.swift in Sources */,
+				BEF6AEFA244FD729007F3DED /* CodeView.swift in Sources */,
 				BE4E2036244FC05700694577 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
