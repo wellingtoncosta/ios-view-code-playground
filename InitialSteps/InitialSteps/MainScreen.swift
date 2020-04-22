@@ -35,7 +35,7 @@ final class MainScreen : UIView {
     
 }
 
-extension MainScreen: CodeView {
+extension MainScreen: CustomView {
     func buildViewHierarchy() {
         addSubview(button)
     }

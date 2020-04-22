@@ -6,14 +6,14 @@
 //  Copyright © 2020 Wellington Pereira. All rights reserved.
 //
 
-protocol CodeView {
+protocol CustomView {
     func buildViewHierarchy()
     func setupConstraints()
     func setupAdditionalConfiguration()
     func setupView()
 }
 
-extension CodeView {
+extension CustomView {
     func setupView() {
         buildViewHierarchy()
         setupConstraints()
