@@ -14,6 +14,7 @@
 		BE4E2040244FC05A00694577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4E203E244FC05A00694577 /* LaunchScreen.storyboard */; };
 		BE4E204B244FC05A00694577 /* InitialStepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E204A244FC05A00694577 /* InitialStepsTests.swift */; };
 		BE4E2056244FC05A00694577 /* InitialStepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E2055244FC05A00694577 /* InitialStepsUITests.swift */; };
+		BE4E2064244FC6F700694577 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E2063244FC6F700694577 /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BE4E2051244FC05A00694577 /* InitialStepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InitialStepsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4E2055244FC05A00694577 /* InitialStepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialStepsUITests.swift; sourceTree = "<group>"; };
 		BE4E2057244FC05A00694577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4E2063244FC6F700694577 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BE4E203C244FC05A00694577 /* Assets.xcassets */,
 				BE4E203E244FC05A00694577 /* LaunchScreen.storyboard */,
 				BE4E2041244FC05A00694577 /* Info.plist */,
+				BE4E2063244FC6F700694577 /* MainScreen.swift */,
 			);
 			path = InitialSteps;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4E2064244FC6F700694577 /* MainScreen.swift in Sources */,
 				BE4E2038244FC05700694577 /* ViewController.swift in Sources */,
 				BE4E2034244FC05700694577 /* AppDelegate.swift in Sources */,
 				BE4E2036244FC05700694577 /* SceneDelegate.swift in Sources */,
